@@ -1,60 +1,129 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-    <meta charset="UTF-8">
-    <title>Progresso de Desenvolvimento de Software</title>
+ <meta charset="UTF-8">
+ <title>Minha Loja de Roupas</title>
+ <meta name="description" content="Encontre os melhores vestidos, blusas e mais na nossa loja de roupas femininas. Oferecemos uma grande variedade de produtos da moda.">
+
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+ <link rel="stylesheet" href="styles.css">
+
+
+ <!-- Toastr CSS -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+ <!-- jQuery -->
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+ <!-- Toastr JS -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 </head>
 
+
+
+
 <body>
-    <header>
-        <h1>Projeto de Software</h1>
+ <header>
+   <h1>Minha Loja de Roupas</h1>
+   <a href="#" class="cart"><i class="fas fa-shopping-cart"></i> Carrinho (<span id="cart-count">0</span>)</a>
+ </header>
 
-        <nav>
-            <ul>
-                <li>
-                    <a href="#">Página Principal</a>
-                </li>
-                <li>
-                    <a href="#">Sobre</a>
-                </li>
-                <li>
-                    <a href="#">Contato</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <section>
-            <article id="etapa1">
-                <figure>
-                    <img src="https://www.devmedia.com.br/marketing/landing-page/assets/images/uml/levantamento-requisitos.png"
-                        width="350" height="350" alt="Imagem Etapa 1 do Software" />
+ <main>
+   <section class="products">
+       <div class="product">
+         <div class="image-container">
+             <img src="https://images.tcdn.com.br/img/img_prod/759897/vestido_longo_floral_fundo_azul_6104909_1_9be35c7773a45c09a5f8c4e75c5836f1.jpg" alt="Vestido Floral">
+           </div>
+         <h2>Vestido Floral</h2>
+         <p class="price">$49.99</p>
+         <button class="add-to-cart">Adicionar ao Carrinho</button>
+       </div>
+       <div class="product">
+         <div class="image-container">
+             <img src="https://cdn.awsli.com.br/600x1000/2455/2455472/produto/185700728b10dd92850.jpg" alt="Vestido Floral">
+           </div>
+         <h2>Vestido Floral</h2>
+         <p class="price">$49.99</p>
+         <button class="add-to-cart">Adicionar ao Carrinho</button>
+       </div>
+       <div class="product">
+         <div class="image-container">
+             <img src="https://images.tcdn.com.br/img/img_prod/759897/vestido_longo_floral_fundo_azul_6104909_1_9be35c7773a45c09a5f8c4e75c5836f1.jpg" alt="Vestido Floral">
+           </div>
+         <h2>Vestido Floral</h2>
+         <p class="price">$49.99</p>
+         <button class="add-to-cart">Adicionar ao Carrinho</button>
+       </div>
+       <div class="product">
+         <div class="image-container">
+             <img src="https://images.tcdn.com.br/img/img_prod/759897/vestido_longo_floral_fundo_azul_6104909_1_9be35c7773a45c09a5f8c4e75c5836f1.jpg" alt="Vestido Floral">
+           </div>
+         <h2>Vestido Floral</h2>
+         <p class="price">$49.99</p>
+         <button class="add-to-cart">Adicionar ao Carrinho</button>
+       </div>
+       <!-- Adicionar mais produtos conforme necessário -->
+     </section>
+     <section class="products">
+     <div class="product">
+       <div class="image-container">
+           <img src="https://images.tcdn.com.br/img/img_prod/759897/vestido_longo_floral_fundo_azul_6104909_1_9be35c7773a45c09a5f8c4e75c5836f1.jpg" alt="Vestido Floral">
+         </div>
+       <h2>Vestido Floral</h2>
+       <p class="price">$49.99</p>
+       <button class="add-to-cart">Adicionar ao Carrinho</button>
+     </div>
+     <div class="product">
+       <div class="image-container">
+           <img src="https://images.tcdn.com.br/img/img_prod/759897/vestido_longo_floral_fundo_azul_6104909_1_9be35c7773a45c09a5f8c4e75c5836f1.jpg" alt="Vestido Floral">
+         </div>
+       <h2>Vestido Floral</h2>
+       <p class="price">$49.99</p>
+       <button class="add-to-cart">Adicionar ao Carrinho</button>
+     </div>
+     <div class="product">
+       <div class="image-container">
+           <img src="https://images.tcdn.com.br/img/img_prod/759897/vestido_longo_floral_fundo_azul_6104909_1_9be35c7773a45c09a5f8c4e75c5836f1.jpg" alt="Vestido Floral">
+         </div>
+       <h2>Vestido Floral</h2>
+       <p class="price">$49.99</p>
+       <button class="add-to-cart">Adicionar ao Carrinho</button>
+     </div>
+     <div class="product">
+       <div class="image-container">
+           <img src="https://images.tcdn.com.br/img/img_prod/759897/vestido_longo_floral_fundo_azul_6104909_1_9be35c7773a45c09a5f8c4e75c5836f1.jpg" alt="Vestido Floral">
+         </div>
+       <h2>Vestido Floral</h2>
+       <p class="price">$49.99</p>
+       <button class="add-to-cart">Adicionar ao Carrinho</button>
+     </div>
+     <!-- Adicionar mais produtos conforme necessário -->
+   </section>
+ </main>
 
-                    <figcaption>Etapa 1: Levantamento de Requisitos</figcaption>
-                    <progress value="100" max="100"></progress>
-                </figure>
-            </article>
-            <article id="etapa2">
-                <figure>
-                    <img src="https://www.nova8.com.br/2022/wp-content/uploads/2019/12/nova8-codigo-seguro.png"
-                    width="350" height="350" alt="Imagem Etapa 2 do Software" />
-                    <figcaption>Etapa 2: Desenvolvimento do código</figcaption>
-                    <progress value="72" max="100"></progress>
-                </figure>
-            </article>
-            <article id="etapa3">
-                <figure>
-                    <img src="https://matteus.dev/wp-content/uploads/software-762486_640.webp"
-                    width="350" height="350" alt="Imagem Etapa 3 do Software" />
-                    <figcaption>Etapa 3: Testes</figcaption>
-                    <progress value="50" max="100"></progress>
-                </figure>
-            </article>
 
-            <mark>Progresso total do projeto: 63%</mark>
-        </section>
-    </main>
+ <footer>
+   <p>&copy; 2023 Minha Loja de Roupas</p>
+ </footer>
+
+
+ <script>
+ $(document).ready(function() {
+   let cartCount = 0;
+
+
+   $('.add-to-cart').click(function() {
+     toastr.success('Produto Adicionado!', '', {
+       progressBar: true
+     });
+
+
+     // Incrementa o contador do carrinho ao adicionar um produto
+     cartCount++;
+     $('#cart-count').text(cartCount);
+   });
+ });
+</script>
+
+
 </body>
-</html>
